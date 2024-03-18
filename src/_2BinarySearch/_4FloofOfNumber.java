@@ -6,18 +6,22 @@ public class _4FloofOfNumber {
     public static void main(String[] args) {
         System.out.println("------------------------------------------------");
         int arr[] = {2,3,5,9,14,16,18};
-        int target = 15;
+        int target = 1;
         int ans = floorOfNumber(arr, target);
 
         System.out.println("Array: "+Arrays.toString(arr));
-        System.out.print("Floor of Number *" + target + "* is: ");
-        System.out.println(arr[ans]);
+        System.out.print("Floor(Index) of Number *" + target + "* is: ");
+        System.out.println(ans);
         System.out.print("------------------------------------------------");
     }
 
     static int floorOfNumber(int[] arr, int target){
         int start =0;
         int end = arr.length -1;
+
+        if(target< arr[0]){
+            return -1;
+        }
 
         while(start <= end){
             int middle = (start + end)/2;

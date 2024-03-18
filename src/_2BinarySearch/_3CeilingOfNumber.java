@@ -10,14 +10,18 @@ public class _3CeilingOfNumber {
         int ans = ceilingOfNumber(arr, target);
 
         System.out.println("Array: "+ Arrays.toString(arr));
-        System.out.print("Ceil of Number *" + target + "* is: ");
-        System.out.println(arr[ans]);
+        System.out.print("Ceil(Index) of Number *" + target + "* is: ");
+        System.out.println(ans);
         System.out.println("------------------------------------------------");
     }
 
     static int ceilingOfNumber(int[] arr, int target){
         int start =0;
         int end = arr.length -1;
+
+        if(target> arr[arr.length - 1]){
+            return -1;
+        }
 
         while(start <= end){
             int middle = (start + end)/2;

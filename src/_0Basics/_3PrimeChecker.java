@@ -1,4 +1,4 @@
-package Basics;
+package _0Basics;
 
 public class _3PrimeChecker {
     public static void main(String[] args) {

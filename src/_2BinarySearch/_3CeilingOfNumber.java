@@ -2,19 +2,20 @@ package _2BinarySearch;
 
 import java.util.Arrays;
 
-public class _1BinarySearch {
+public class _3CeilingOfNumber {
     public static void main(String[] args) {
         System.out.println("------------------------------------------------");
-        int arr[] = {8,12,13,18,25};
-        int target = 12;
-        int ans = binarySearch(arr, target);
+        int arr[] = {2,3,5,9,14,16,18};
+        int target = 15;
+        int ans = ceilingOfNumber(arr, target);
+
         System.out.println("Array: "+ Arrays.toString(arr));
-        System.out.print("*"+target + "* is present at Index: ");
-        System.out.println(ans);
+        System.out.print("Ceil of Number *" + target + "* is: ");
+        System.out.println(arr[ans]);
         System.out.println("------------------------------------------------");
     }
 
-    static int binarySearch(int[] arr, int target){
+    static int ceilingOfNumber(int[] arr, int target){
         int start =0;
         int end = arr.length -1;
 
@@ -30,6 +31,6 @@ public class _1BinarySearch {
             }
         }
 
-        return -1;
+        return start;
     }
 }

@@ -1,6 +1,4 @@
-package Basics;
-
-import java.util.Scanner;
+package _0Basics;
 
 public class _2RevereseNumber {
     public static void main(String[] args) {

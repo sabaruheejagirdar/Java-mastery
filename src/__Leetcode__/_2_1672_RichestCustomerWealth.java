@@ -1,4 +1,4 @@
-package Leetcode;
+package __Leetcode__;
 
 //https://leetcode.com/problems/richest-customer-wealth/description/
 //1672. Richest Customer Wealth

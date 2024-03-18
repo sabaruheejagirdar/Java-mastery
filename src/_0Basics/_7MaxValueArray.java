@@ -1,4 +1,4 @@
-package Basics;
+package _0Basics;
 
 public class _7MaxValueArray {
     public static void main(String[] args) {

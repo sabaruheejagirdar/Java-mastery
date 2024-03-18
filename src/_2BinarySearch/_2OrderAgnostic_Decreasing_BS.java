@@ -1,16 +1,20 @@
 package _2BinarySearch;
 
+import java.util.Arrays;
+
 public class _2OrderAgnostic_Decreasing_BS {
     public static void main(String[] args) {
-         int[] arr = {8,7,6,5,4};
-         int[] arr2 = {19,84,105,206};
-         int target = 84;
+        System.out.println("------------------------------------------------");
+        int[] arr = {64,55,48,12,9,6};
+        int target = 12;
 
-         boolean isAsc = arr[0] < arr[arr.length-1];
+        boolean isAsc = arr[0] < arr[arr.length-1];
+        int ans = oa_bs(arr, target, isAsc);
 
-         int ans = oa_bs(arr2, target, isAsc);
-         System.out.println(ans);
-
+        System.out.println("Array: "+ Arrays.toString(arr));
+        System.out.print("*"+target + "* is present at Index: ");
+        System.out.println(ans);
+        System.out.println("------------------------------------------------");
     }
 
     static int oa_bs(int[] arr, int target, boolean isAsc){

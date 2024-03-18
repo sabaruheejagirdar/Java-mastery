@@ -1,4 +1,4 @@
-package Basics;
+package _0Basics;
 
 public class _4Armstrong {
     public static void main(String[] args) {
